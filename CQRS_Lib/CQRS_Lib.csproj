@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MediatR" Version="12.4.1" />
     <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="9.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
     <PackageReference Include="System.Text.Json" Version="9.0.1" />
@@ -20,15 +19,24 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="CQRS\" />
     <None Remove="Data\" />
     <None Remove="Data\Models\" />
+    <None Remove="Repo\" />
+    <None Remove="CQRS\Commands\" />
+    <None Remove="CQRS\Queries\" />
+    <None Remove="CQRS\Handelars\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CQRS\" />
     <Folder Include="Data\" />
     <Folder Include="Data\Models\" />
+    <Folder Include="Repo\" />
+    <Folder Include="CQRS\Commands\" />
+    <Folder Include="CQRS\Queries\" />
+    <Folder Include="CQRS\Handelars\" />
   </ItemGroup>
 </Project>
